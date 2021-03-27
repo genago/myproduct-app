@@ -2,15 +2,17 @@
 
 import React from "react";
 
-const Button = () => {
+const Button = (props) => {
   const onButtonClick = () => {
-      console.log('button')
-      
+    props.onButtonClick(props.label);
   };
 
   return (
-    <div style={{border: '1px dashed blue'}}>
-      <button type="button" onClick={onButtonClick}>This is a button!</button> {/* passing function onButtonClick to the prop onClick */}
+    <div style={{ border: "1px dashed blue" }}>
+      <button type="button" onClick={onButtonClick}>
+        {props.label}
+      </button>
+      {/* passing function onButtonClick to the prop onClick */}
     </div>
   );
 };
