@@ -6,22 +6,32 @@ import Professional from "./Professional";
 import Amateur from "./Amateur";
 import About from "./About";
 
+
+const divStyle = {
+    backgroundColor: "lightgrey",
+    height: "200px", 
+    width: "200px",
+    border: "15px green",
+    padding: "30%",
+    margin: "40px",
+}
+
 const Container = (props) => {
   if (props.lastButtonPressed === "Professional") {
     return (
-      <div style={{ backgroundColor: "lightslategrey" }}>
+      <div style={divStyle}>
         <Professional />
       </div>
     );
   } else if (props.lastButtonPressed === "Amateur") {
     return (
-      <div style={{ backgroundColor: "lightslategrey" }}>
+      <div style={divStyle}>
         <Amateur />
       </div>
     );
   } else
     return (
-      <div style={{ backgroundColor: "lightslategrey" }}>
+      <div style={divStyle}>
         <About />
       </div>
     );

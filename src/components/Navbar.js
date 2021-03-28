@@ -1,11 +1,10 @@
 // This navbar contains three buttons.
 
-import React, { useState } from "react";
+//import React, { useState } from "react";
 import Button from "./Button";
 
 const Navbar = (props) => {
   // stuff that useState returns = useState()
-
   //   const [lastButtonPressed, setLastButtonPressed] = useState();
 
   const onButtonClick = (label) => {
